@@ -1,0 +1,12 @@
+{
+  "name": "express-start-kit",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "materialize-css": "^0.100.2"
+  }
+}
