@@ -6,4 +6,8 @@ router.get("/", function(req, res) {
   res.render("index");
 });
 
+router.get("/material", function(req, res) {
+  res.render("material");
+});
+
 module.exports = router;
