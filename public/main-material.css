@@ -51,7 +51,7 @@ html, body {
 #about h3 {
   color: #0052a1;
   font-variant: small-caps;
-  margin-top: 5%;
+  margin-top: 2.5%;
 }
 
 .about-card {
@@ -161,6 +161,7 @@ html, body {
   /*=======================*/
   #about h3 {
     text-align: center;
+    margin-top: 0%;
   }
 
   .circle {
