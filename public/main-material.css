@@ -48,6 +48,12 @@ html, body {
   width: 20rem;
 }
 
+.about-background {
+  background:url("/images/about.svg") no-repeat 0% 0%;
+  background-size: cover;
+  height: 20rem;
+}
+
 #about h3 {
   color: #0052a1;
   font-variant: small-caps;
@@ -57,6 +63,8 @@ html, body {
 .about-card {
   background-color: rgba(211,211,211, .95);
   border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+
 }
 
 .about-card p {
@@ -71,11 +79,8 @@ html, body {
 }
 
 .about-image img {
-  position: absolute;
-  top: 54rem;
-  left: 45rem;
+  position: relative;
   z-index: -1;
-  height: 70vh;
 }
 
 /*=========================*/
@@ -84,20 +89,31 @@ html, body {
 .how-card {
   background-color: rgba(211,211,211, .95);
   border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
 .how-content h3 {
+  margin-top: 0;
   font-variant: small-caps;
   text-align: center;
+  color: #000000;
 }
 
 .how-content {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  margin-top: 2.5%;
 }
 
 .how-content img {
-  padding-top: 2.5%;
+  width: 75%;
+  margin-top: 0%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.how-arrow {
+  padding-bottom: 0%;
+  padding-top: 0%;
+  margin-bottom: 0%;
 }
 
 /*========================*/
@@ -109,6 +125,11 @@ html, body {
 #bottom h4 {
   padding-top: 2.5%;
   text-align: center;
+  font-size: 2rem;
+}
+
+.notifications img {
+  height: 12.5rem;
 }
 
 .map-content {
@@ -119,6 +140,7 @@ html, body {
 .map-card {
   background-color: rgba(211,211,211, .95);
   border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
 .map-card h5 {
@@ -170,6 +192,8 @@ html, body {
 
   .about-card {
     background-color: transparent;
+    border-radius: 0rem;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
   }
 
   .about-image img {
@@ -181,6 +205,19 @@ html, body {
   /*=========================*/
   .how-card {
     border-radius: 0rem;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+
+  }
+
+  .how-content img {
+    margin-top: 0%;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .how-arrow {
+    padding-bottom: 5%;
   }
 
   /*=========================*/
@@ -188,6 +225,7 @@ html, body {
   /*=========================*/
   .map-card {
     border-radius: 0rem;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
   }
 
   .button {
@@ -198,3 +236,26 @@ html, body {
     font-size: 1.5rem;
   }
 }
+
+/*======================*/
+/*===== Tablet CSS =====*/
+/*======================*/
+@media (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .about-image img {
+      position: absolute;
+      top: 35rem;
+      left: 35rem;
+      z-index: -1;
+      height: 50vh;
+    }
+
+    .about-card {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .circle {
+      display: none;
+    }
+  }
