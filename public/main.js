@@ -12,3 +12,13 @@ function bottomAutoScroll() {
   element = document.getElementById("bottom");
   element.scrollIntoView({behavior: "smooth", block: "start"});
 }
+
+$(document).ready(function(){
+   $('.carousel').carousel({
+     duration: 200,
+     padding: 100
+   });
+   setInterval(function() {
+     $('.carousel').carousel('next');
+   }, 2500); // every 2 seconds
+});
