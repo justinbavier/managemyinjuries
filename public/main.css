@@ -169,7 +169,7 @@ html, body {
 @media (max-width: 600px)
   and (-webkit-min-device-pixel-ratio: 2) {
   .arrow-down i {
-    font-size: 10vh;
+    display: none;
   }
   /*=======================*/
   /*===== Section One =====*/
@@ -260,7 +260,7 @@ html, body {
 @media (max-width: 992px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .arrow-down i {
-      font-size: 10vh;
+      display: none;
     }
 
     /*=======================*/
@@ -277,5 +277,9 @@ html, body {
 
     .circle {
       display: none;
+    }
+
+    #about h3 {
+      text-align: center;
     }
   }
