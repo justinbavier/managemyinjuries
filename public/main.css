@@ -2,6 +2,11 @@ html, body {
   font-family: 'ubuntu';
 }
 
+.body-container {
+  max-width: 1350px !important;
+  margin: 0 auto;
+}
+
 .arrow-down {
   margin: 0 auto;
   text-align: center;
@@ -31,11 +36,8 @@ html, body {
   color: #636363;
 }
 
-.pitch-image img {
-  height: 1000rem;
-}
-
 /*=======================*/
+/*===== Section Two =====*/
 /*=======================*/
 .circle {
   display: none;
@@ -49,29 +51,29 @@ html, body {
 }
 
 .about-background {
-  background:url("/images/about.svg") no-repeat 0% 0%;
-  background-position: 95% 0%;
-  height: 40rem;
-  margin-top: 5%;
+  background:url("/images/about.svg") no-repeat;
+  background-position: 97.5% 0%;
+  height: 30rem;
+  position: relative;
+  z-index: -1;
+  top: 2.5rem;
 }
 
-#about h3 {
-  color: #0052a1;
-  font-variant: small-caps;
+#about h5 {
+  color: #000000;
   margin-top: 2.5%;
+  margin-bottom: 0;
 }
 
 .about-card {
   background-color: rgba(211,211,211, .95);
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-
 }
 
 .about-card p {
   line-height: 2rem;
   font-size: 1.125rem;
-  text-indent: 5%
 }
 
 .about-content {
@@ -79,10 +81,14 @@ html, body {
   padding-bottom: 2.5%;
 }
 
-.about-image img {
-  position: relative;
-  z-index: -1;
+.about-list {
+  margin-top: 0;
 }
+.about-list li {
+  list-style-type: circle !important;
+  padding-left: 1em !important;
+}
+
 
 /*=========================*/
 /*===== Section Three =====*/
@@ -123,6 +129,7 @@ html, body {
 #bottom {
   padding-top: 2.5%;
 }
+
 #bottom h4 {
   padding-top: 2.5%;
   text-align: center;
@@ -131,6 +138,14 @@ html, body {
 
 .notifications img {
   height: 12.5rem;
+}
+
+.notifications-carousel {
+  margin-top: -0%;
+}
+
+.carousel-text {
+  font-size: 1.5rem;
 }
 
 .map-content {
@@ -156,18 +171,10 @@ html, body {
   font-size: 2.5vh;
 }
 
-@media (min-width: 601px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  .notifications-carousel {
-    display: none;
-  }
-}
-
 /*======================*/
 /*===== Mobile CSS =====*/
 /*======================*/
-@media (max-width: 600px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 600px) {
   .arrow-down i {
     display: none;
   }
@@ -208,6 +215,10 @@ html, body {
     display: none;
   }
 
+  .about-background {
+    display: none;
+  }
+
   /*=========================*/
   /*===== Section Three =====*/
   /*=========================*/
@@ -244,10 +255,6 @@ html, body {
     display: none;
   }
 
-  .notifications-carousel {
-    margin-top: -17.5%;
-    margin-bottom: -20%;
-  }
 
   #bottom h4 {
     font-size: 1.5rem;
@@ -257,8 +264,7 @@ html, body {
 /*======================*/
 /*===== Tablet CSS =====*/
 /*======================*/
-@media (max-width: 992px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 992px) {
     .arrow-down i {
       display: none;
     }
@@ -266,16 +272,16 @@ html, body {
     /*=======================*/
     /*===== Section Two =====*/
     /*=======================*/
-    .about-background {
-      display: none;
-    }
-
     .about-card {
       background-color: transparent;
       box-shadow: none;
     }
 
     .circle {
+      display: none;
+    }
+
+    .about-background {
       display: none;
     }
 

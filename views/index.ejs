@@ -1,4 +1,5 @@
 <% include _header %>
+<div class="body-container">
 <div class="container">
 
 <!-- Title -->
@@ -10,8 +11,8 @@
 
 <!-- Pitch Images -->
 <div class="row center-align">
-  <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
-    <div class="row">
+  <div class="col s10 m10 l12 offset-s1 offset-m1">
+    <div class="pitch-row row">
       <img class="pitch-image col s12 m4 l4" src="/images/card-clock.svg"></img>
       <img class="pitch-image col s12 m4 l4" src="/images/card-process.svg"></img>
       <img class="pitch-image-last col s12 m4 l4" src="/images/card-smiley.svg"></img>
@@ -33,22 +34,32 @@
 <!-- About Us -->
 <div id="about" class="row">
   <div class="circle"></div>
-    <h3>About Us</h3>
 
-    <div class="about-card card col s12 m12 l7">
+
+    <div class="about-card card col s12 m12 l12">
 
       <div class="about-content container">
-
-      <p>ManageMyInjuries is a digital assistant for helping you manage workplace injuries during the first 24 hours of care.
-        Where and how an injured employee seeks care during these 24 hours can have a significant impact on the medical cost
-        and lost-time cost of their claim.</p>
-     <p>Ideally, your company has developed a standard process for handling a workplace injury - direct the injured employee
-        to a preferred provider, contact a case management provider and report the injury to a claims administrator.</p>
-      <p>Your challenge is making sure this process is followed, keeping it current with changing providers, site
-        supervisors, etc.</p>
-      <p>ManageMyInjuries makes this easy by implementing your process in an online database. When changes are made they are
-        immediately available to your entire organization. And with no software to install or app to download,
-        ManageMyInjuries is available to your organization on demand, 24x7x365.</p>
+      <h5>With ManageMyInjuries you can:</h5>
+      <ol class="about-list col s12 m12 l12">
+        <li>
+          <p>Build your provider network by workplace location, including designate preferred providers.</p>
+        </li>
+        <li>
+          <p>Connect to your injury care network, including telephonic case managers, PBM and claim administrators.</p>
+        </li>
+        <li>
+          <p>Implement custom forms and documents used in your injury care process</p>
+        </li>
+        <li>
+          <p>Specify the workflow, documentation and reporting requirements for handling an injury</p>
+        </li>
+        <li>
+          <p>Monitor injured worker compliance with appointments and two-way text messaging</p>
+        </li>
+        <li>
+          <p>Log all injury care actions for reporting purposes</p>
+        </li>
+      </ol>
 
       </div>
 
@@ -94,25 +105,23 @@
 <!-- Bottom -->
 <div id="bottom">
   <div class="row">
-    <!-- static notifications -->
+    <!-- static notifications
     <div class="notifications col s12 m10 l10 offset-m1 offset-l1">
       <img class="col s4 m4 l4" src="/images/circle-text.svg"></img>
       <img class="col s4 m4 l4" src="/images/circle-email.svg"></img>
       <img class="col s4 m4 l4" src="/images/circle-fax.svg"></img>
     </div>
+    -->
 
     <!-- notifications carousel -->
     <div class="notifications-carousel center-align">
       <div class="carousel">
-        <div class="carousel-item"><img class="graphic" src="/images/circle-text.svg" /></div>
-        <div class="carousel-item"><img class="graphic" src="/images/circle-email.svg" /></div>
-        <div class="carousel-item"><img class="graphic" src="/images/circle-fax.svg" /></div>
+        <h4 class="notifications-text col s12 m12 l12">Send and receive notifications via text, email, or fax</h4>
+        <div class="carousel-item"><img class="graphic" src="/images/circle-text.svg" /><p class="carousel-text">Text</p></div>
+        <div class="carousel-item"><img class="graphic" src="/images/circle-email.svg" /><p class="carousel-text">Email</p></div>
+        <div class="carousel-item"><img class="graphic" src="/images/circle-fax.svg" /><p class="carousel-text">Fax</p></div>
       </div>
     </div>
-  </div>
-
-  <div class="notifications-text row">
-    <h4 class="col s12 m12 l12">Send and receive notifications via text, email, or fax</h4>
   </div>
 
   <div class="row">
@@ -130,6 +139,7 @@
   </div>
 </div>
 
+</div>
 </div>
 
 <% include _footer %>

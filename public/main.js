@@ -16,7 +16,7 @@ function bottomAutoScroll() {
 $(document).ready(function(){
    $('.carousel').carousel({
      duration: 200,
-     padding: 100
+     padding: 200
    });
    setInterval(function() {
      $('.carousel').carousel('next');
