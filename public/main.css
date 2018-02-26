@@ -99,7 +99,7 @@ html, body {
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
-.how-content h3 {
+.how-content h5 {
   margin-top: 0;
   font-variant: small-caps;
   text-align: center;
@@ -123,6 +123,9 @@ html, body {
   margin-bottom: 0%;
 }
 
+.single-image {
+  margin: 0 auto;
+}
 /*========================*/
 /*===== Section Four =====*/
 /*========================*/
